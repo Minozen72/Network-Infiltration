@@ -16,7 +16,7 @@ div {
 .img-card {
     border-radius: 20px;
     margin: 10px;
-    width: 90%;
+    width: 70%;
 }
 
 .banner img {
@@ -41,11 +41,19 @@ div {
     .banner img {
         width: 100%;
     }
+
+    .img-card {
+        width: 90%;
+    }
 }
 
 @media (max-width: 576px) {
     .banner img {
         width: 100%;
+    }
+
+    .img-card {
+        width: 90%;
     }
 }
 
