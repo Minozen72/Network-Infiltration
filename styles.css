@@ -17,6 +17,10 @@ div {
     border-radius: 20px;
     margin: 10px;
     width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .banner img {
