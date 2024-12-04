@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary role of an Ethical Hacker (White Hat)?",
+      "options": [
+        "Exploit vulnerabilities for personal gain",
+        "Use their skills to improve security by testing systems for weaknesses",
+        "Expose vulnerabilities without permission",
+        "Steal data or deploy malware"
+      ],
+      "answer": "Use their skills to improve security by testing systems for weaknesses"
+    },
+    {
+      "question": "Which of the following is NOT a responsibility of a cybersecurity expert?",
+      "options": [
+        "Implementing tools and strategies to safeguard against hacking",
+        "Monitoring systems for suspicious activity",
+        "Creating security protocols and training staff",
+        "Collecting and interpreting data to help organizations make informed decisions"
+      ],
+      "answer": "Collecting and interpreting data to help organizations make informed decisions"
+    },
+    {
+      "question": "What is the main task of a data analyst?",
+      "options": [
+        "Monitoring posts and comments in online communities",
+        "Gathering, processing, and interpreting data to support decision-making",
+        "Maintaining and configuring computer systems and networks",
+        "Creating engaging and authentic posts on social media"
+      ],
+      "answer": "Gathering, processing, and interpreting data to support decision-making"
+    },
+    {
+      "question": "Which role is responsible for maintaining order in online communities?",
+      "options": [
+        "System Administrator",
+        "Moderator",
+        "Influencer",
+        "Cybersecurity Expert"
+      ],
+      "answer": "Moderator"
+    },
+    {
+      "question": "What is a key responsibility of an influencer?",
+      "options": [
+        "Installing and updating operating systems",
+        "Building relationships by interacting with followers",
+        "Monitoring network performance",
+        "Investigating breaches and restoring compromised systems"
+      ],
+      "answer": "Building relationships by interacting with followers"
+    },
+    {
+      "question": "Which of the following tasks is NOT typically performed by a system administrator?",
+      "options": [
+        "Configuring firewalls and monitoring network performance",
+        "Assisting users with technical issues",
+        "Managing data backups and recovery",
+        "Producing engaging and authentic posts on social media"
+      ],
+      "answer": "Producing engaging and authentic posts on social media"
+    }
+  ]
+}
