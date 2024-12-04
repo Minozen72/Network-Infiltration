@@ -38,7 +38,7 @@ function displayQuestion() {
         document.getElementById('quiz-container').innerHTML = `
             <h1>Quiz finished! <br> Your score: ${score}/${questions.length}</h1>
             <button onclick="location.reload()">Restart</button>
-            <button onclick="window.location.href='index.html'">Retourner à l'accueil</button>
+            <button onclick="window.location.href='index.html'">Back to home</button>
         `;
     }
 }
