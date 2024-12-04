@@ -24,10 +24,8 @@ function displayQuestion() {
         question.options.forEach(option => {
             const button = document.createElement('button');
             button.textContent = option;
-            button.onclick = () => {
-                checkAnswer(option);
-                disableOptions(); // Désactiver les autres options après un clic
-            };
+            button.onclick = () => checkAnswer(option);
+            button.classList.add('col-md-5', 'col-sm-12');
             options.appendChild(button);
         });
 
@@ -38,9 +36,8 @@ function displayQuestion() {
         });
     } else {
         document.getElementById('quiz-container').innerHTML = `
-            <h1>Quiz terminé! Votre score: ${score}/${questions.length}</h1>
-            <button onclick="location.reload()">Recommencer</button>
-            <button onclick="window.location.href='index.html'">Retourner à l'accueil</button>
+            <h1>Quiz finished! <br> Your score: ${score}/${questions.length}</h1>
+            <button onclick="location.reload()">Restart</button>
         `;
     }
 }
@@ -64,16 +61,23 @@ function checkAnswer(selectedOption) {
         if (button.textContent === selectedOption) {
             if (selectedOption === correctAnswer) {
                 button.classList.add('correct');
+                score++;
+
+                // Passer à la question suivante après 5 secondes
+                setTimeout(() => {
+                    nextQuestion();
+                }, 1000);
             } else {
                 button.classList.add('incorrect');
+                // Passer à la question suivante après 5 secondes
+                setTimeout(() => {
+                    nextQuestion();
+                }, 3000);
             }
         }
     });
     
-    // Passer à la question suivante après 5 secondes
-    setTimeout(() => {
-        nextQuestion();
-    }, 3500);
+
 }
 
 // Désactiver toutes les options après un clic
