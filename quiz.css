@@ -4,7 +4,7 @@
 .point-intero img {
     position: absolute;
     top: 0;
-    left: 75%;
+    left: 70%;
     width: 30%;
 }
 
@@ -14,6 +14,8 @@
 }
 
 body{
+    margin:0;
+    padding:0;
     background-color: #F4E30A;
 }
 
@@ -40,12 +42,44 @@ body{
 
 #options button{
     border-radius: 50px;
-    border: 2px solid #000000;
-    font-size: 0.8rem;
+    border: 3px solid #000000;
+    font-size: 1rem;
     text-align: left;
     padding: 10px;
     margin: 1rem;
     margin-right: auto;
+    font-weight: bold;
+}
+
+
+#quiz-container button{
+    border-radius: 50px;
+    border: 3px solid #000000;
+    font-size: 1rem;
+    padding: 10px;
+    margin-right: auto;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#quiz-container h1{
+    font-size: 2rem;
+    padding: 6rem;
+    font-family: 'Digital Caliper', sans-serif;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#quiz-container button:hover{
+
+    transform: scale(1.05);
 }
 
 
