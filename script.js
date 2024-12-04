@@ -18,7 +18,7 @@ function displayQuestion() {
 
     if (currentQuestionIndex < questions.length) {
         const question = questions[currentQuestionIndex];
-        document.getElementById('question').textContent = question.question;
+        document.getElementById('question').innerHTML = `<p>${question.question}</p>`;
         const options = document.getElementById('options');
         options.innerHTML = ''; // Effacer les options précédentes
         question.options.forEach(option => {
@@ -49,15 +49,31 @@ function displayQuestion() {
 function checkAnswer(selectedOption) {
     const correctAnswer = questions[currentQuestionIndex].answer;
     const responseElement = document.getElementById('response');
-    if (selectedOption === correctAnswer) {
-        score++; // Augmenter le score pour une réponse correcte
-        responseElement.textContent = "Correct!";
-        responseElement.style.color = 'green';
-    } else {
-        responseElement.innerHTML = "Incorrect!<br>The correct answer was:<br>" + correctAnswer;
-        responseElement.style.color = 'red';
-    }
-    document.getElementById('next-button').style.display = 'block'; // Afficher le bouton de la question suivante
+    const optionButtons = document.querySelectorAll('#options button');
+
+    // Désactiver tous les boutons de réponse
+    optionButtons.forEach(button => {
+        button.disabled = true;
+        
+        // Vérifier si le bouton correspond à la bonne réponse
+        if (button.textContent === correctAnswer) {
+            button.classList.add('correct');
+        }
+        
+        // Vérifier si le bouton correspond à la réponse sélectionnée
+        if (button.textContent === selectedOption) {
+            if (selectedOption === correctAnswer) {
+                button.classList.add('correct');
+            } else {
+                button.classList.add('incorrect');
+            }
+        }
+    });
+    
+    // Passer à la question suivante après 5 secondes
+    setTimeout(() => {
+        nextQuestion();
+    }, 3500);
 }
 
 // Désactiver toutes les options après un clic

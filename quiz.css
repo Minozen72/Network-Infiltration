@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/digital-caliper');
+
+
+.point-intero img {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 30%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F4E30A;
+}
+
+#question{
+    font-size: 1.2rem;
+    padding: 6rem;
+    margin: auto;
+    font-family: 'Digital Caliper', sans-serif;
+    background-image: url(./img/bg-quiz.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#question p{
+    margin: auto;
+    text-align: center;
+}
+
+
+#options{
+    padding: 0 10px 10px 10px;
+}
+
+#options button{
+    border-radius: 50px;
+    border: 2px solid #000000;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 10px;
+    margin: 1rem;
+    margin-right: auto;
+}
+
+
+
+#options button.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+#options button.incorrect {
+    background-color: #dc3545;
+    color: white;
+}

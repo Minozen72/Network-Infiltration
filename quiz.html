@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+
+    <div class="text-center my-2">
+        <img src="./img/LOGOO.png" alt="Network Infiltration Logo" class="img-fluid" style="max-width: 40%; margin-top: 30px;">
+    </div>
+    <div class="point-intero">
+        <img src="./img/point-intero.png" alt="">
+    </div>
     <div class="container">
-        <div id="quiz-container" class="row justify-content-center">
-            <div class="col-lg-10 col-md-12 col-sm-12">
-                <h1>Quiz sur les rôles professionnels</h1>
-                <div id="question"></div>
-                <div id="options" class="row justify-content-center"></div>
-                <div id="response" class="row justify-content-center"></div>
-                <button id="next-button" class="btn btn-primary" style="display:none;" onclick="nextQuestion()">Question suivante</button>
-            </div>
+        <div id="quiz-container" class="">
+            <div id="question"></div>
+            <div id="options" class="row justify-content-center"></div>
+            <div id="response" class="row justify-content-center"></div>
+            <button id="next-button" class="btn btn-primary" style="display:none;" onclick="nextQuestion()">Question suivante</button>
         </div>
     </div>
 
